@@ -1,0 +1,13 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+int main() {
+    int *arr = (int *)malloc(5 * sizeof(int));
+
+    int *another_arr = (int *)malloc(10 * sizeof(int));
+    free(another_arr);
+
+    char *str = (char *)malloc(50 * sizeof(char));
+
+    return 0;
+}
